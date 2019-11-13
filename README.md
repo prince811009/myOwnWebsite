@@ -1,2 +1,2 @@
-# myOwnWebsite
-All about Joanne's profile
+## Introduction
+All about Joanne's profile.

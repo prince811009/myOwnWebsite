@@ -5,7 +5,7 @@ $(document).ready(function(){
     e.preventDefault();
     var target = $(this).attr('href');
     var targetPos = $(target).offset().top;
-    $('html, body').animate({scrollTop: targetPos}, 1000);
+    $('html, body').animate({scrollTop: targetPos}, 500);
   });
   
   $(window).scroll(function(){
@@ -46,7 +46,7 @@ $(document).ready(function(){
     });
     
     // bg scroll 
-    $('#profiles').css('background-position-y', -(scrollPos / 2) + 'px')
+    $('#education').css('background-position-y', -(scrollPos / 2) + 'px')
     $('#header-ele').css('transform', 'translateY( ' + (scrollPos / 2) + 'px )')
   });
   

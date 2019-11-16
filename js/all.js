@@ -5,7 +5,7 @@ $(document).ready(function(){
     e.preventDefault();
     var target = $(this).attr('href');
     var targetPos = $(target).offset().top;
-    $('html, body').animate({scrollTop: targetPos}, 500);
+    $('html, body').animate({scrollTop: targetPos}, 1000);
   });
   
   $(window).scroll(function(){
@@ -26,11 +26,11 @@ $(document).ready(function(){
     });
     
     // progress bar
-    var skillTop = $('#skills').position().top;
+    var skillTop = $('#education').position().top;
     // console.log('skillTop', skillTop);
     if (skillTop <= (scrollPos + windowHeight / 2) && !showSkill) {
       showSkill = true;
-      $('#skills .progress-bar').each(function(){
+      $('#education .progress-bar').each(function(){
         var thisValue = $(this).data('progress');
         console.log('thisValue', thisValue);
         $(this).css('width', thisValue + '%');
@@ -46,7 +46,7 @@ $(document).ready(function(){
     });
     
     // bg scroll 
-    $('#education').css('background-position-y', -(scrollPos / 2) + 'px')
+    $('#profiles').css('background-position-y', -(scrollPos / 2) + 'px')
     $('#header-ele').css('transform', 'translateY( ' + (scrollPos / 2) + 'px )')
   });
   

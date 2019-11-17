@@ -375,6 +375,10 @@ a {
   margin-left: $gutter*2;
   margin-right: $gutter*2;
 }
+.m-x-3 {
+  margin-left: $gutter*3;
+  margin-right: $gutter*3;
+}
 .p-y-1 {
   padding-top: $gutter;
   padding-bottom: $gutter;
@@ -441,5 +445,5 @@ a {
 }
 .footerText {
   clear: both;
-  margin: 80px 50px;
+  margin: 80px 45px;
 }
